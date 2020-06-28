@@ -43,25 +43,25 @@ public class MagnifyingglassController  {
 	@FXML
 	void onSettings(ActionEvent event) {
 
-		service.showSeeting();
+		this.service.showSeeting();
 	}
 
 	@FXML
 	void onViews(ActionEvent event) {
 
-		service.showViews();
+		this.service.showViews();
 	}
 
 	@FXML
 	void onZoomIn(ActionEvent event) {
 
-		service.zoomIn();
+		this.service.zoomIn();
 	}
 
 	@FXML
 	void onZoomOut(ActionEvent event) {
 
-		service.zoomOut();
+		this.service.zoomOut();
 	}
 
 	public HBox getComponentView() {
