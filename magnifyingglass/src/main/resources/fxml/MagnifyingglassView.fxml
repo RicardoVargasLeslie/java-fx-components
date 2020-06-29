@@ -48,7 +48,7 @@
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
          </HBox.margin>
       </Label>
-      <MenuButton fx:id="menubtn" mnemonicParsing="false" text="Views" HBox.hgrow="NEVER">
+      <MenuButton fx:id="menubtn" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="81.0" text="Views" HBox.hgrow="NEVER">
         <items>
           <MenuItem mnemonicParsing="false" text="Full Screen" />
             <MenuItem mnemonicParsing="false" text="Lens" />

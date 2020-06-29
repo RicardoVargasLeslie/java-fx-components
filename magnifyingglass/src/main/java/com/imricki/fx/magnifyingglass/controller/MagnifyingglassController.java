@@ -1,16 +1,22 @@
 package com.imricki.fx.magnifyingglass.controller;
 
-import com.imricki.fx.magnifyingglass.service.MagnifyService;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import com.imricki.fx.magnifyingglass.service.Magnify;
 import com.imricki.fx.magnifyingglass.utils.LoaderUtils;
-import javafx.event.ActionEvent;
+
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
 import javafx.scene.layout.HBox;
 
-public class MagnifyingglassController {
+public class MagnifyingglassController  implements Initializable {
 
 	@FXML
 	private HBox componentView;
@@ -29,42 +35,59 @@ public class MagnifyingglassController {
 
 	@FXML
 	private Button settingsbtn;
+
+	private Magnify magnify;
 	
-	
-	private MagnifyService service;
+	//Domain
+	private SimpleIntegerProperty percent;
 
 	public MagnifyingglassController() {
 
 		LoaderUtils.viewLoader("/fxml/MagnifyingglassView.fxml", this);
-
+		magnify = new Magnify();
+		
 	}
+	
+	
+	
 
 	@FXML
 	void onSettings() {
 
-		this.service.showSeeting();
+		this.magnify.showSeeting();
 	}
 
 	@FXML
 	void onViews() {
 
-		this.service.showViews();
+		this.magnify.showViews();
 	}
 
 	@FXML
 	void onZoomIn() {
 
-		this.service.zoomIn();
+		this.magnify.zoomIn();
 	}
 
 	@FXML
 	void onZoomOut() {
 
-		this.service.zoomOut();
+		this.magnify.zoomOut();
 	}
 
 	public HBox getComponentView() {
 		return componentView;
+	}
+
+
+
+
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		
+		percent=new SimpleIntegerProperty(this,"percent",0);
+		percentageLabel.textProperty().bind(percent.asString());
+		
 	}
 
 }
