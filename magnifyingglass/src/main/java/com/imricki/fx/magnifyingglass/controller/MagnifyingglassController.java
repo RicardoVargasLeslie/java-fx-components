@@ -36,7 +36,7 @@ public class MagnifyingglassController  {
 
 	public MagnifyingglassController() throws IOException {
 
-		LoaderUtils.viewLoader("../view/MagnifyingglassView.fxml", this);
+		LoaderUtils.viewLoader("/fxml/MagnifyingglassView.fxml", this);
 
 	}
 
