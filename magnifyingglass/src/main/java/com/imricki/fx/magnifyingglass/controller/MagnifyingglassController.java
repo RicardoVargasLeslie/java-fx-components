@@ -7,9 +7,10 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuButton;
 import javafx.scene.layout.HBox;
 
-public class MagnifyingglassController  {
+public class MagnifyingglassController {
 
 	@FXML
 	private HBox componentView;
@@ -21,17 +22,18 @@ public class MagnifyingglassController  {
 	private Button zoomInbtn;
 
 	@FXML
-	private Button settingsbtn;
-
-	@FXML
 	private Label percentageLabel;
 
 	@FXML
-	private ComboBox<?> viewsCombobox;
+	private MenuButton menubtn;
+
+	@FXML
+	private Button settingsbtn;
+	
 	
 	private MagnifyService service;
 
-	public MagnifyingglassController()  {
+	public MagnifyingglassController() {
 
 		LoaderUtils.viewLoader("/fxml/MagnifyingglassView.fxml", this);
 
