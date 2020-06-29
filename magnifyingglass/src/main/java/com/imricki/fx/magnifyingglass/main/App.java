@@ -20,9 +20,7 @@ public class App extends Application {
 	public void start(Stage primaryStage) throws Exception {
 
 		primaryStage.setTitle(title);
-
 		primaryStage.getIcons().getClass().getResource("glass.png");
-
 		magnifyingglassController = new MagnifyingglassController();
 		primaryStage.setScene(new Scene(this.magnifyingglassController.getComponentView()));
 		primaryStage.show();
