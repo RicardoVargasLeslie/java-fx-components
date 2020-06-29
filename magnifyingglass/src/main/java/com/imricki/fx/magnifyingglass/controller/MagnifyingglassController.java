@@ -1,10 +1,7 @@
 package com.imricki.fx.magnifyingglass.controller;
 
-import java.io.IOException;
-
 import com.imricki.fx.magnifyingglass.service.MagnifyService;
 import com.imricki.fx.magnifyingglass.utils.LoaderUtils;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -41,25 +38,25 @@ public class MagnifyingglassController  {
 	}
 
 	@FXML
-	void onSettings(ActionEvent event) {
+	void onSettings() {
 
 		this.service.showSeeting();
 	}
 
 	@FXML
-	void onViews(ActionEvent event) {
+	void onViews() {
 
 		this.service.showViews();
 	}
 
 	@FXML
-	void onZoomIn(ActionEvent event) {
+	void onZoomIn() {
 
 		this.service.zoomIn();
 	}
 
 	@FXML
-	void onZoomOut(ActionEvent event) {
+	void onZoomOut() {
 
 		this.service.zoomOut();
 	}
