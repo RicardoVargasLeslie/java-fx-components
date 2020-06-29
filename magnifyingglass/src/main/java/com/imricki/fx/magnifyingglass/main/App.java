@@ -9,9 +9,9 @@ import javafx.stage.Stage;
 public class App extends Application {
 
 	private String title = "Magnifyingglass";
-	private MagnifyingglassController magnifyingglassController;
+	private MagnifyingglassController magnifyingglassController = new MagnifyingglassController();
 
-	public static void main(String[] args)  {
+	public static void main(String[] args) {
 
 		Application.launch(args);
 	}
@@ -22,8 +22,7 @@ public class App extends Application {
 		primaryStage.setTitle(title);
 		primaryStage.getIcons().getClass().getResource("/images/glass.png");
 		primaryStage.setResizable(false);
-		magnifyingglassController = new MagnifyingglassController();
-		primaryStage.setScene(new Scene(this.magnifyingglassController.getComponentView()));
+		primaryStage.setScene(new Scene(magnifyingglassController.getComponentView()));
 		primaryStage.show();
 	}
 
