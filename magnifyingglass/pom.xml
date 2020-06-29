@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.imricki.fx</groupId>
 	<artifactId>magnifyingglass</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>magnifying glass</name>
 	<description>magnifying glass example</description>
 
@@ -12,10 +12,9 @@
 		<project.java.version>11</project.java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<downloadSources>true</downloadSources>
-		<downloadJavadocs>true</downloadJavadocs>
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>11</maven.compiler.target>
+		<exec.mainClass>com.imricki.fx.magnifyingglass.main.Main</exec.mainClass>
 	</properties>
 
 	<dependencies>
@@ -32,29 +31,4 @@
 		</dependency>
 	</dependencies>
 
-	<build>
-		<plugins>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
-				<configuration>
-					<release>${maven.compiler.release}</release>
-				</configuration>
-			</plugin>
-
-			<plugin>
-				<groupId>org.openjfx</groupId>
-				<artifactId>javafx-maven-plugin</artifactId>
-				<version>0.0.4</version>
-				<configuration>
-					<mainClass>com.imricki.fx.magnifyingglass.main.App</mainClass>
-				</configuration>
-			</plugin>
-
-		</plugins>
-	</build>
-
 </project>
-
