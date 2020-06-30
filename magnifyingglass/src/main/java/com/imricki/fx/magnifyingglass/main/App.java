@@ -7,6 +7,11 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class App extends Application {
+	
+	
+	/**
+	 * To Run execute mvn compile exec:java
+	 */
 
 	private String title = "Magnifyingglass";
 	private MagnifyingglassController magnifyingglassController = new MagnifyingglassController();
