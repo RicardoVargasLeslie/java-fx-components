@@ -5,10 +5,6 @@ import java.util.ResourceBundle;
 
 import com.imricki.fx.magnifyingglass.service.Magnify;
 import com.imricki.fx.magnifyingglass.utils.LoaderUtils;
-
-import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -38,8 +34,6 @@ public class MagnifyingglassController  implements Initializable {
 
 	private Magnify magnify;
 	
-	//Domain
-	private SimpleIntegerProperty percent;
 
 	public MagnifyingglassController() {
 
@@ -48,9 +42,6 @@ public class MagnifyingglassController  implements Initializable {
 		
 	}
 	
-	
-	
-
 	@FXML
 	void onSettings() {
 
@@ -79,15 +70,11 @@ public class MagnifyingglassController  implements Initializable {
 		return componentView;
 	}
 
-
-
-
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		
-		percent=new SimpleIntegerProperty(this,"percent",0);
-		percentageLabel.textProperty().bind(percent.asString());
+		// TODO Auto-generated method stub
 		
 	}
+
 
 }
