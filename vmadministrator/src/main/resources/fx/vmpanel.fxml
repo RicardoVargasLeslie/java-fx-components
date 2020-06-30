@@ -5,18 +5,26 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
 
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="viewComponent" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <top>
-      <MenuBar BorderPane.alignment="TOP_LEFT">
+      <MenuBar BorderPane.alignment="CENTER">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
+              <MenuItem mnemonicParsing="false" text="Proferences" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Import" />
+                  <MenuItem mnemonicParsing="false" text="Export" />
+                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="VM">
@@ -38,17 +46,69 @@
    <center>
       <BorderPane BorderPane.alignment="CENTER">
          <top>
-            <ToolBar BorderPane.alignment="CENTER">
+            <ToolBar BorderPane.alignment="TOP_RIGHT">
               <items>
-                <Button mnemonicParsing="false" text="Button" />
-                  <Button mnemonicParsing="false" text="Button" />
-                  <Button mnemonicParsing="false" text="Button" />
-                  <Button mnemonicParsing="false" text="Button" />
+                <Button fx:id="settingsbtn" alignment="BOTTOM_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#onSettings" text="Settings">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/settings.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="importbtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#onImport" text="Import">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/import.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="exportbtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#onExport" text="Export">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/export.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="newbtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#onNew" text="New">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="addbtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#onAdd" text="Add">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/plus.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
               </items>
             </ToolBar>
          </top>
+         <right>
+            <ImageView fitHeight="81.0" fitWidth="85.0" BorderPane.alignment="TOP_CENTER">
+               <image>
+                  <Image url="@../images/pngegg.png" />
+               </image>
+            </ImageView>
+         </right>
          <center>
-            <TextArea BorderPane.alignment="CENTER" />
+            <Pane disable="true" BorderPane.alignment="TOP_CENTER">
+               <children>
+                  <TextArea editable="false" text="Velit ut tortor pretium viverra suspendisse&#10;&#10;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor&#10; incididunt ut labore et dolore magna aliqua. Cursus turpis massa tincidunt dui ut &#10;ornare. Leo integer malesuada nunc vel. Turpis massa sed elementum tempus.&#10; Sagittis eu volutpat odio facilisis mauris sit amet. Pharetra sit amet aliquam id &#10;diam maecenas ultricies mi eget. " />
+               </children>
+            </Pane>
          </center>
       </BorderPane>
    </center>
