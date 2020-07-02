@@ -12,7 +12,7 @@ public class PanelController {
 
 	public PanelController() {
 
-		LoaderUtils.viewLoader("/fxml/panelview.fxml", this);
+		LoaderUtils.viewLoader("/fxml/panelvew.fxml", this);
 	}
 
 	public BorderPane getComponenetView() {
