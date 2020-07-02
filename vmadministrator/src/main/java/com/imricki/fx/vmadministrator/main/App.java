@@ -23,6 +23,7 @@ public class App extends Application {
 	public void start(Stage primaryStage) throws Exception {
 
 		primaryStage.setTitle("VM Panel");
+		primaryStage.getIcons().getClass().getResource("/images/iconfinder_profle_1055000.png");
 		primaryStage.setScene(new Scene(this.vmController.getViewComponent()));
 		primaryStage.show();
 

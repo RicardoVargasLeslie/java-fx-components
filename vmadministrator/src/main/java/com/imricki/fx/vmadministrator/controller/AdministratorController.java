@@ -32,22 +32,22 @@ public class AdministratorController implements Initializable {
 	private Button addbtn;
 
 	@FXML
-	void onAdd(ActionEvent event) {
+	void onAdd() {
 
 	}
 
 	@FXML
-	void onExport(ActionEvent event) {
+	void onExport() {
 
 	}
 
 	@FXML
-	void onImport(ActionEvent event) {
+	void onImport() {
 
 	}
 
 	@FXML
-	void onNew(ActionEvent event) {
+	void onNew() {
 
 	}
 
