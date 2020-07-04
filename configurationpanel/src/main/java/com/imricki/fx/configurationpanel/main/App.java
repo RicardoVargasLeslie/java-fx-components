@@ -20,7 +20,7 @@ public class App extends Application {
 		primaryStage.setTitle("Config Panel");
 		primaryStage.getIcons().getClass().getResource("");
 		primaryStage.setResizable(false);
-		primaryStage.setScene(new Scene(panelController.getComponenetView()));
+		primaryStage.setScene(new Scene(panelController.getComponentView()));
 		primaryStage.show();
 
 	}

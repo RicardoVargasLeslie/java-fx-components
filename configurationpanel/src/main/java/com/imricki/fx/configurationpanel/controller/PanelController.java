@@ -8,14 +8,14 @@ import javafx.scene.layout.BorderPane;
 public class PanelController {
 
 	@FXML
-	private BorderPane componenetView;
+	private BorderPane componentView;
 
 	public PanelController() {
 
 		LoaderUtils.viewLoader("/fxml/panelvew.fxml", this);
 	}
 
-	public BorderPane getComponenetView() {
-		return this.componenetView;
+	public BorderPane getComponentView() {
+		return this.componentView;
 	}
 }

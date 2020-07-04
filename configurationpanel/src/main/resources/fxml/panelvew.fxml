@@ -12,8 +12,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-
-<BorderPane fx:id="componenetView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="componentView" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <GridPane hgap="5.0" BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -23,14 +22,14 @@
             <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
         </columnConstraints>
         <rowConstraints>
-          <RowConstraints maxHeight="20.000000715255737" minHeight="6.399993896484375" prefHeight="17.600005865097046" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="102.80000839233398" minHeight="31.000003814697266" prefHeight="63.00000000000001" vgrow="ALWAYS" />
-            <RowConstraints maxHeight="158.99999618530273" minHeight="11.599991607666027" prefHeight="57.400000000000006" vgrow="ALWAYS" />
-          <RowConstraints maxHeight="171.40003967285153" minHeight="67.40002441406247" prefHeight="147.19997558593752" vgrow="ALWAYS" />
+          <RowConstraints maxHeight="25.600006818771362" minHeight="4.800018310546875" prefHeight="23.200012922286987" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="90.20001220703125" minHeight="23.000003814697266" prefHeight="53.999987077713016" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="166.99999618530273" minHeight="51.60000915527341" prefHeight="51.60000915527341" vgrow="ALWAYS" />
+          <RowConstraints vgrow="ALWAYS" />
           <RowConstraints vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button mnemonicParsing="false" text="Button" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
+            <Button mnemonicParsing="false" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
                <graphic>
                   <ImageView>
                      <image>
@@ -39,7 +38,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
+            <Button mnemonicParsing="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
                <graphic>
                   <ImageView>
                      <image>
@@ -48,7 +47,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" text="Button" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
+            <Button mnemonicParsing="false" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
                <graphic>
                   <ImageView>
                      <image>
@@ -57,7 +56,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
+            <Button mnemonicParsing="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
                <graphic>
                   <ImageView>
                      <image>
@@ -66,7 +65,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" text="Button" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
+            <Button mnemonicParsing="false" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
                <graphic>
                   <ImageView>
                      <image>
@@ -75,7 +74,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
+            <Button mnemonicParsing="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
                <graphic>
                   <ImageView>
                      <image>
@@ -84,7 +83,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
+            <Button mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
                <graphic>
                   <ImageView>
                      <image>
@@ -93,7 +92,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
+            <Button mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
                <graphic>
                   <ImageView>
                      <image>
@@ -102,7 +101,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
+            <Button mnemonicParsing="false" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
                <graphic>
                   <ImageView>
                      <image>
@@ -111,7 +110,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
+            <Button mnemonicParsing="false" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
                <graphic>
                   <ImageView>
                      <image>
@@ -120,16 +119,16 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="88.0" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
+            <Button mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
                <graphic>
                   <ImageView>
                      <image>
-                        <Image url="@../images/iconfinder_process-stop_118794.png" />
+                        <Image url="@../images/iconfinder_image-loading_118944.png" />
                      </image>
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
+            <Button mnemonicParsing="false" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
                <graphic>
                   <ImageView>
                      <image>
@@ -147,7 +146,7 @@
    <top>
       <VBox alignment="CENTER" spacing="5.0" BorderPane.alignment="CENTER">
          <children>
-            <Label text="Label" />
+            <Label text="Cinfiguration Panel" />
             <ImageView preserveRatio="true" VBox.vgrow="NEVER">
                <image>
                   <Image url="@../images/iconfinder_help-browser_118806.png" />
